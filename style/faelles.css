@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*------style af nav----*/
+
+nav {
+    background-color: rgb(205, 171, 245, 50);
+    padding-top: 1.5vw;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    padding-right: 3vw;
+    padding-top: 1.8vw;
+    float: right;
+}
+#navbar {
+    padding-right: 5vw;
+}
+
+/*----style af footer----*/
+
+footer {
+    background-color: #F7F4B8;
+}
+footer p {
+    color: #D1CE82;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#some {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 30px;
+    padding-top: 20px;
+}
+#some img {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+#hjerte {
+    width: 2.3vw;
+    height: 2.3vw;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+}

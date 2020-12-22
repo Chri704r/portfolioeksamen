@@ -1,0 +1,43 @@
+/*---------STYLE AF SPLASH---------*/
+
+h1 {
+    color: #FFFA86;
+    overflow: hidden;
+}
+h2 {
+    color: white;
+    position: relative;
+    top: 47vw;
+    left: 18vw;
+    font-size: 2vw;
+    overflow: hidden;
+}
+#section_splash {
+    background-color: #CDABF5;
+    padding-bottom: 70vw;
+}
+#section_splash img {
+    width: 60vw;
+    height: 46vw;
+    position: absolute;
+    top: 7vw;
+    right: 5vw;
+}
+#section_splash #port {
+    position: absolute;
+    top: 8vw;
+    left: 12vw;
+    font-size: 12vw;
+}
+#section_splash #folio {
+    position: absolute;
+    top: 23vw;
+    left: 25vw;
+    font-size: 7vw;
+    transform: rotate(90deg);
+}
+
+/*--------STYLE AF SECTION_OM-----------*/
+
+
+/*-----STYLE AF SECTION_PORTFOLIO------*/
