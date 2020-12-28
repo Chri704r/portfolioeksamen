@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+/*-------fonte---------*/
+
+
 /*------style af nav----*/
 
 nav {
@@ -12,10 +15,14 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1.7vw;
     padding-right: 3vw;
-    padding-top: 1.8vw;
+    padding-top: 1.2vw;
     float: right;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+nav a:hover {
+    color: #8315be;
 }
 #navbar {
     padding-right: 5vw;
@@ -30,6 +37,7 @@ footer p {
     color: #D1CE82;
     text-align: center;
     padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
 }
 #some {
     display: flex;

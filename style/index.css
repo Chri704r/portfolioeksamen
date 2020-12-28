@@ -3,18 +3,21 @@
 h1 {
     color: #FFFA86;
     overflow: hidden;
+    font-family: 'Prata', serif;
 }
 h2 {
     color: white;
     position: relative;
     top: 47vw;
-    left: 18vw;
-    font-size: 2vw;
+    left: 16vw;
+    font-size: 3vw;
     overflow: hidden;
+    font-family: 'Allura', cursive;
+    font-weight: 200;
 }
 #section_splash {
     background-color: #CDABF5;
-    padding-bottom: 70vw;
+    padding-bottom: 55vw;
 }
 #section_splash img {
     width: 60vw;
@@ -26,18 +29,223 @@ h2 {
 #section_splash #port {
     position: absolute;
     top: 8vw;
-    left: 12vw;
+    left: 9vw;
     font-size: 12vw;
 }
 #section_splash #folio {
     position: absolute;
-    top: 23vw;
+    top: 25vw;
     left: 25vw;
-    font-size: 7vw;
+    font-size: 6vw;
     transform: rotate(90deg);
 }
 
 /*--------STYLE AF SECTION_OM-----------*/
 
+h3 {
+    color: #FDFB86;
+    font-size: 4vw;
+    font-family: 'Martel', serif;
+}
+#kasse {
+    height: 15vw;
+    width: 100%;
+    background-color: #CDABF5;
+}
+#section_om h3 {
+    position: relative;
+    top: -30vw;
+    left: 42vw;
+}
+#section_om {
+    background-color: #DFC9F8;
+    height: 40vw;
+    overflow: hidden;
+    padding-bottom: 15vw;
+}
+#section_om p {
+    width: 40vw;
+    font-size: 1.7vw;
+    position: relative;
+    top: -30vw;
+    left: 42vw;
+    color: #464646;
+    font-family: 'Lato', sans-serif;
+}
+#section_om a {
+    padding-top: 30px;
+    position: relative;
+    top: -29.5vw;
+    left: 42vw;
+    font-size: 1.7vw;
+    text-decoration: none;
+    color: #797979;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+#potraet {
+    width: 30vw;
+    height: 39vw;
+    position: relative;
+    top: -9vw;
+    left: 10vw;
+}
+#pil {
+    position: relative;
+    top: -29.2vw;
+    left: 43vw;
+    width: 1vw;
+    height: 1.7vw;
+}
 
 /*-----STYLE AF SECTION_PORTFOLIO------*/
+
+#section_portfolio h3 {
+    padding-left: 7vw;
+    padding-bottom: 2vw;
+}
+#section_portfolio {
+    background-color: #DFC9F8;
+}
+#section_portfolio a {
+    text-decoration: none;
+}
+#section_portfolio #col_top {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 2vw;
+    justify-content: center;
+    padding-bottom: 10vw;
+}
+#section_portfolio img {
+    width: 20vw;
+    height: 29vw;
+    border-radius: 10px;
+}
+#section_portfolio img:hover {
+    transform: scale(105%);
+}
+figcaption {
+    display: block;
+    caption-side: bottom;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    font-family: 'Lato', sans-serif;
+}
+
+/*--------------TABLET VERSION---------------*/
+
+@media only screen and (max-width: 800px) {
+    #section_om h3 {
+        position: relative;
+        top: -35vw;
+    }
+    #section_om p {
+        position: relative;
+        top: -35vw;
+        width: 50vw;
+        font-size: 2.3vw;
+    }
+    #section_om a {
+        position: relative;
+        top: -34.5vw;
+        font-size: 2.3vw;
+    }
+    #pil {
+        position: relative;
+        top: -34.5vw;
+    }
+}
+
+/*---------------MOBIL VERSION-----------------*/
+
+@media only screen and (max-width: 550px) {
+    #section_splash {
+        padding-bottom: 150vw;
+    }
+    #section_splash img {
+        width: 90vw;
+        height: 70vw;
+        position: absolute;
+        top: 25vw;
+        right: 5vw;
+    }
+    #section_splash #port {
+        position: absolute;
+        top: 5vw;
+        left: 9vw;
+        font-size: 18vw;
+    }
+    #section_splash #folio {
+        position: absolute;
+        top: 153vw;
+        right: -50vw;
+        font-size: 12vw;
+    }
+    h2 {
+        position: absolute;
+        top: 127vw;
+        left: 55vw;
+        font-size: 6vw;
+    }
+    #section_om {
+        padding-bottom: 100vw;
+        overflow: hidden;
+    }
+    #section_om h3 {
+        position: relative;
+        top: -5vw;
+        left: 3vw;
+        font-size: 6vw;
+    }
+    #section_om p {
+        position: relative;
+        top: -6vw;
+        left: 3vw;
+        font-size: 4vw;
+        width: 85vw;
+    }
+    #section_om a {
+        position: relative;
+        top: -5vw;
+        left: 3vw;
+        font-size: 4vw;
+    }
+    #pil {
+        position: relative;
+        top: -4.5vw;
+        left: 5vw;
+        width: 2vw;
+        height: 3vw;
+    }
+    #potraet {
+        width: 60vw;
+        height: 78vw;
+        position: relative;
+        top: -9vw;
+        left: 20vw;
+    }
+    #section_portfolio h3 {
+        position: relative;
+        font-size: 6.5vw;
+        left: -4vw;
+        overflow: hidden;
+    }
+    #section_portfolio img {
+        width: 70vw;
+        height: 101vw;
+        padding-left: 5vw;
+    }
+    #section_portfolio #col_top {
+        justify-content: flex-start;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+    #section_portfolio .col_top {
+/*        flex-shrink: 0;*/
+        scroll-snap-align: center;
+    }
+    figcaption {
+        font-size: 5vw;
+    }
+}
