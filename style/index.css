@@ -79,7 +79,7 @@ h3 {
     left: 42vw;
     font-size: 1.7vw;
     text-decoration: none;
-    color: #797979;
+    color: #ffffff;
     font-family: 'Hind Siliguri', sans-serif;
 }
 #potraet {
@@ -242,7 +242,7 @@ figcaption {
         scroll-snap-type: x mandatory;
     }
     #section_portfolio .col_top {
-/*        flex-shrink: 0;*/
+        /*        flex-shrink: 0;*/
         scroll-snap-align: center;
     }
     figcaption {

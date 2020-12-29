@@ -1,0 +1,109 @@
+#section_om {
+    background-color: #CDABF5;
+    height: 110vw;
+}
+h1 {
+    color: #FDFB86;
+    font-family: 'Martel', serif;
+    font-size: 4vw;
+    font-weight: 100;
+    position: absolute;
+    top: 6vw;
+    left: 12vw;
+}
+h2 {
+    color: #FDFB86;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8vw;
+}
+p {
+    color: #4a4a4a;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6vw;
+}
+#wave {
+    width: 30vw;
+    height: 78vw;
+    position: absolute;
+    top: 8vw;
+}
+#info {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    grid-gap: 7vw;
+    position: absolute;
+    top: 15vw;
+    left: 19vw;
+}
+#uddannelse {
+    padding-left: 12vw;
+    width: 40vw;
+}
+#galleri {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    grid-gap: 5vw;
+    width: 20vw;
+    top: 12vw;
+    left: 75vw;
+}
+@media only screen and (max-width: 850px) {
+    #section_om {
+        height: 130vw;
+    }
+    h1 {
+        font-size: 4.5vw;
+    }
+    h2 {
+        font-size: 2.2vw;
+    }
+    p {
+        font-size: 2vw;
+    }
+    #wave {
+        height: 110vw;
+    }
+}
+
+/*---------------MOBIL VERSION-----------------*/
+
+@media only screen and (max-width: 600px) {
+    #section_om {
+        height: 220vw;
+    }
+    h1 {
+        font-size: 10vw;
+        left: 20vw;
+    }
+    #wave {
+        width: 17vw;
+        height: 150vw;
+        left: 2vw;
+    }
+    #galleri {
+        flex-direction: row;
+        position: absolute;
+        top: 170vw;
+        left: 5vw;
+        align-content: center;
+    }
+    #galleri img {
+        width: 27vw;
+    }
+    #info {
+        position: absolute;
+        top: 25vw;
+        left: 20vw;
+        width: 70vw;
+    }
+    h2,
+    p {
+        font-size: 3vw;
+    }
+    #uddannelse {
+        padding-left: 0vw;
+        width: 70vw;
+    }
+}

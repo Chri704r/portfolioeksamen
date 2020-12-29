@@ -3,14 +3,22 @@
     padding: 0;
 }
 
-/*-------fonte---------*/
-
-
 /*------style af nav----*/
 
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
 nav {
     background-color: rgb(205, 171, 245, 50);
-    padding-top: 1.5vw;
+    padding-top: 1vw;
+    padding-right: 5vw;
 }
 nav a {
     color: white;
@@ -24,8 +32,27 @@ nav a {
 nav a:hover {
     color: #8315be;
 }
+#menuknap {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2vw;
+    right: 4vw;
+}
 #navbar {
     padding-right: 5vw;
+    display: contents;
+}
+
+/*--------mobil version style------*/
+
+@media only screen and (max-width: 800px) {
+    #menuknap {
+        display: inline-block;
+    }
+    #navbar {
+        display: inherit;
+    }
 }
 
 /*----style af footer----*/
@@ -57,4 +84,22 @@ footer p {
     margin-right: auto;
     margin-left: auto;
     padding-top: 10px;
+}
+
+/*---------effekter----------*/
+
+.hidden {
+    display: none;
+    transform: scale(0);
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
