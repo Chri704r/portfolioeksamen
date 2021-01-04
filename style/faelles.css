@@ -8,8 +8,8 @@
 .bar1,
 .bar2,
 .bar3 {
-    width: 35px;
-    height: 5px;
+    width: 32px;
+    height: 4px;
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
@@ -17,15 +17,15 @@
 }
 nav {
     background-color: rgb(205, 171, 245, 50);
-    padding-top: 1vw;
     padding-right: 5vw;
+    padding-bottom: 50px;
 }
 nav a {
     color: white;
     text-decoration: none;
     font-size: 1.7vw;
     padding-right: 3vw;
-    padding-top: 1.2vw;
+    padding-top: 2.5vw;
     float: right;
     font-family: 'Hind Siliguri', sans-serif;
 }
@@ -40,8 +40,10 @@ nav a:hover {
     right: 4vw;
 }
 #navbar {
-    padding-right: 5vw;
     display: contents;
+}
+#folio_links {
+    display: none;
 }
 
 /*--------mobil version style------*/
@@ -49,9 +51,40 @@ nav a:hover {
 @media only screen and (max-width: 800px) {
     #menuknap {
         display: inline-block;
+        z-index: 2;
+        position: fixed;
     }
     #navbar {
-        display: inherit;
+        display: flex;
+        flex-direction: column-reverse;
+        position: fixed;
+        right: 0px;
+        background-color: #eae7f4;
+        z-index: 1;
+        width: 200px;
+        padding: 15px;
+        margin: -100px 0 0 -50px;
+        padding-top: 140px;
+        padding-bottom: 75vh;
+        padding-left: 60px;
+        border-left: solid #e4e2ea 2px;
+    }
+    #navbar a {
+        font-size: 20px;
+        padding-top: 35px;
+        color: #454545;
+        direction: rtl;
+    }
+    #navbar a:hover {
+        color: #8315be;
+    }
+    #folio_links {
+        display: contents;
+    }
+    #folio_links a {
+        font-size: 17px;
+        color: #696969;
+        padding-top: 15px;
     }
 }
 
@@ -93,13 +126,50 @@ footer p {
     transform: scale(0);
 }
 .change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 5px);
+    transform: rotate(-45deg) translate(-8px, 5px);
+    background-color: #454545;
 }
 .change .bar2 {
     opacity: 0;
 }
 .change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -7px);
+    transform: rotate(45deg) translate(-8px, -7px);
+    background-color: #454545;
+}
+
+/*------animationer---------*/
+
+.openmenu {
+    animation-name: slide_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+@keyframes slide_kf {
+    0% {
+        transform-origin: 0% 0%;
+        transform: translateX(100%);
+    }
+    100% {
+        transform-origin: 0% 0%;
+        transform: translateX(0%);
+    }
+}
+.closemenu {
+    animation-name: slideout_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+@keyframes slideout_kf {
+    100% {
+        transform-origin: 0% 0%;
+        transform: translateX(100%);
+    }
+    0% {
+        transform-origin: 0% 0%;
+        transform: translateX(0%);
+    }
 }
