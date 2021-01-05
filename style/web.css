@@ -1,0 +1,147 @@
+body {
+    background-color: #CDABF5;
+}
+main {
+    padding-bottom: 125vw;
+}
+#special {
+    color: #8315be;
+}
+#second_nav {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 0px;
+    position: fixed;
+    top: 20vw;
+    left: -40px;
+}
+.navimg {
+    width: 10vw;
+    height: 5vw;
+    border-radius: 20px;
+    border: dotted #bd6dd9 2px;
+    cursor: pointer;
+}
+#fremhaevet {
+    border: solid #bd6dd9 3px;
+    position: relative;
+    left: 20px;
+}
+h3 {
+    font-size: 4vw;
+    color: #FDFB86;
+    font-family: 'Prata', serif;
+    position: absolute;
+    top: 5vw;
+    left: 8vw;
+}
+h4 {
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 11vw;
+    left: 13vw;
+}
+figcaption {
+    text-align: center;
+    color: #FFF500;
+    font-family: 'lato';
+    font-size: 2vw;
+    padding-bottom: 0.5vw;
+}
+.scrollpic {
+    width: 50vw;
+    height: 30vw;
+    overflow: scroll;
+    border-radius: 15px;
+}
+#sitev2 {
+    width: 50vw;
+    height: 219vw;
+}
+#first {
+    position: absolute;
+    top: 13vw;
+    left: 45vw;
+}
+#first a {
+    position: absolute;
+    top: 34vw;
+    left: 35vw;
+    text-decoration: none;
+    color: #794a9b;
+    font-weight: 600;
+    font-size: 1.4vw;
+}
+#first a:hover {
+    color: #5d2f7e;
+}
+#lilla_pil {
+    position: absolute;
+    top: 34vw;
+    left: 46.2vw;
+    width: 0.8vw;
+    height: 1.5vw;
+}
+#moodboard {
+    width: 50vw;
+    height: 26vw;
+    border-radius: 15px;
+}
+#second {
+    position: absolute;
+    top: 50vw;
+    left: 10vw;
+}
+#styletile {
+    width: 50vw;
+    height: 90vw;
+}
+#third {
+    position: absolute;
+    top: 83vw;
+    left: 45vw;
+}
+#third a {
+    position: absolute;
+    top: 34vw;
+    left: 35vw;
+    text-decoration: none;
+    color: #794a9b;
+    font-weight: 600;
+    font-size: 1.4vw;
+}
+#third a:hover {
+    color: #5d2f7e;
+}
+
+/*-----animationer-----*/
+
+.linkmoveout {
+    animation-name: linkmoveout_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes linkmoveout_kf {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+.linkmovein {
+    animation-name: linkmovein_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes linkmovein_kf {
+    0% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

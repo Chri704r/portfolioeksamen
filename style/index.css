@@ -102,10 +102,14 @@ h3 {
     left: 10vw;
     border-radius: 20px;
 }
+#section_om a:hover {
+    color: #fffcb7;
+    cursor: pointer;
+}
 #pil {
     position: relative;
     top: -29.2vw;
-    left: 43vw;
+    left: 42.5vw;
     width: 1vw;
     height: 1.7vw;
 }
@@ -178,7 +182,7 @@ figcaption {
 @media only screen and (max-width: 550px) {
     #streg {
         padding-bottom: 420vw;
-        left: 1vw;
+        left: 1.5vw;
         padding-left: 2px;
     }
     #section_splash {
@@ -216,26 +220,26 @@ figcaption {
     #section_om h3 {
         position: relative;
         top: -5vw;
-        left: 3vw;
+        left: 5vw;
         font-size: 6vw;
     }
     #section_om p {
         position: relative;
         top: -6vw;
-        left: 3vw;
+        left: 5vw;
         font-size: 4vw;
         width: 85vw;
     }
     #section_om a {
         position: relative;
         top: -5vw;
-        left: 3vw;
+        left: 5vw;
         font-size: 4vw;
     }
     #pil {
         position: relative;
-        top: -4.5vw;
-        left: 5vw;
+        top: -5vw;
+        left: 7vw;
         width: 2vw;
         height: 3vw;
     }
@@ -249,7 +253,7 @@ figcaption {
     #section_portfolio h3 {
         position: relative;
         font-size: 6.5vw;
-        left: -4vw;
+        left: -2vw;
         overflow: hidden;
     }
     #section_portfolio img {
@@ -268,5 +272,35 @@ figcaption {
     }
     figcaption {
         font-size: 5vw;
+    }
+}
+
+/*----animationer-------*/
+
+.linkmoveout {
+    animation-name: linkmoveout_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes linkmoveout_kf {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+.linkmovein {
+    animation-name: linkmovein_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes linkmovein_kf {
+    0% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
