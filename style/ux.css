@@ -1,0 +1,326 @@
+body {
+    background-color: #CDABF5;
+}
+main {
+    padding-bottom: 430vw;
+}
+#special {
+    color: #8315be;
+}
+#second_nav {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 0px;
+    position: fixed;
+    top: 20vw;
+    left: -40px;
+}
+.navimg {
+    width: 10vw;
+    height: 5vw;
+    border-radius: 20px;
+    border: dotted #bd6dd9 2px;
+    cursor: pointer;
+}
+#fremhaevet {
+    border: solid #bd6dd9 3px;
+    position: relative;
+    left: 20px;
+}
+h3 {
+    font-size: 4vw;
+    color: #FDFB86;
+    font-family: 'Prata', serif;
+    position: absolute;
+    top: 6vw;
+    left: 8vw;
+}
+h4 {
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 11vw;
+    left: 13vw;
+}
+figcaption {
+    text-align: center;
+    color: #FFF500;
+    font-family: 'lato';
+    font-size: 2vw;
+    padding-bottom: 0.8vw;
+}
+#first {
+    position: absolute;
+    top: 17vw;
+    left: 45vw;
+}
+#webshop {
+    width: 50vw;
+    height: 28vw;
+    border-radius: 20px;
+}
+#first a {
+    position: absolute;
+    top: 32vw;
+    left: 35vw;
+    text-decoration: none;
+    color: #794a9b;
+    font-weight: 600;
+    font-size: 1.4vw;
+}
+#first a:hover {
+    color: #5d2f7e;
+}
+#second {
+    position: absolute;
+    top: 55vw;
+    left: 10vw;
+    width: 50vw;
+    font-size: 1.7vw;
+    line-height: 25px;
+    text-align: center;
+}
+#third {
+    position: absolute;
+    top: 100vw;
+    left: 45vw;
+    width: 50vw;
+    font-size: 1.7vw;
+    line-height: 25px;
+    text-align: center;
+}
+#fourth {
+    position: absolute;
+    top: 145vw;
+    left: 12vw;
+    font-size: 1.7vw;
+    line-height: 25px;
+    width: 50vw;
+}
+#fifth {
+    position: absolute;
+    top: 175vw;
+    left: 45vw;
+    font-size: 1.7vw;
+    line-height: 25px;
+    width: 50vw;
+}
+#sixth {
+    position: absolute;
+    top: 210vw;
+    left: 10vw;
+}
+#sixth img {
+    width: 50vw;
+    height: 28vw;
+    border-radius: 20px;
+}
+#seventh {
+    position: absolute;
+    top: 250vw;
+    left: 45vw;
+}
+#seventh img {
+    width: 50vw;
+    height: 28vw;
+    border-radius: 20px;
+}
+.scrollpic {
+    width: 50vw;
+    height: 34vw;
+    overflow: scroll;
+    border-radius: 20px;
+}
+#eighth {
+    position: absolute;
+    top: 290vw;
+    left: 10vw;
+}
+#eighth img {
+    width: 50vw;
+    height: 310vw;
+}
+#ninth {
+    position: absolute;
+    top: 335vw;
+    left: 45vw;
+    width: 50vw;
+}
+embed {
+    width: 50vw;
+    height: 30vw;
+    border-radius: 20px;
+}
+#tenth {
+    position: absolute;
+    top: 380vw;
+    left: 10vw;
+    width: 50vw;
+}
+@media only screen and (max-width: 900px) {
+    .navimg {
+        width: 110px;
+        height: 55px;
+    }
+    figcaption {
+        font-size: 2.4vw;
+    }
+    #first a {
+        font-size: 2vw;
+        left: 30vw;
+        padding-top: 0.5vw;
+    }
+    #second {
+        top: 55vw;
+        left: 15vw;
+        width: 80vw;
+        padding-bottom: 10vw;
+    }
+    #third {
+        top: 95vw;
+        left: 15vw;
+        width: 80vw;
+        padding-bottom: 10vw;
+    }
+    #fourth {
+        top: 135vw;
+        left: 23vw;
+        width: 70vw;
+        padding-bottom: 10vw;
+    }
+    #fourth figcaption,
+    #fifth figcaption {
+        position: relative;
+        left: -5vw;
+    }
+    #fifth {
+        top: 172vw;
+        left: 23vw;
+        width: 70vw;
+        padding-bottom: 10vw;
+    }
+    #sixth {
+        left: 110px;
+    }
+    #eighth {
+        left: 110px;
+    }
+    #tenth {
+        left: 110px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    main {
+        padding-bottom: 700vw;
+    }
+    h3 {
+        font-size: 9vw;
+        top: 3vw;
+        left: 8vw;
+    }
+    h4 {
+        font-size: 6vw;
+        top: 13vw;
+        left: 17vw;
+    }
+    #beskrivelse {
+        top: 20vw;
+    }
+    #knap {
+        font-size: 4.5vw;
+    }
+    #info_pil {
+        top: 0.2vw;
+        left: 20vw;
+        width: 2vw;
+        height: 3vw;
+    }
+    figcaption {
+        font-size: 4vw;
+    }
+    #first {
+        top: 25vw;
+        left: 115px;
+    }
+    #webshop {
+        width: 70vw;
+        height: 40vw;
+        border-radius: 20px;
+    }
+    #first a {
+        top: 46vw;
+        left: 40vw;
+        font-size: 3vw;
+    }
+    #second {
+        top: 78vw;
+        left: 115px;
+        width: 70vw;
+        font-size: 3.5vw;
+        line-height: 4vw;
+    }
+    #third {
+        top: 175vw;
+        left: 115px;
+        width: 70vw;
+        font-size: 3.5vw;
+        line-height: 4vw;
+    }
+    #fourth {
+        top: 270vw;
+        left: 120px;
+        font-size: 3.5vw;
+        line-height: 4vw;
+        width: 70vw;
+    }
+    #fifth {
+        top: 340vw;
+        left: 120px;
+        font-size: 3.5vw;
+        line-height: 4vw;
+        width: 70vw;
+    }
+    #sixth {
+        top: 420vw;
+        left: 115px;
+    }
+    #sixth img {
+        width: 70vw;
+        height: 40vw;
+    }
+    #seventh {
+        top: 470vw;
+        left: 115px;
+    }
+    #seventh img {
+        width: 70vw;
+        height: 40vw;
+    }
+    #eighth {
+        top: 520vw;
+        left: 115px;
+    }
+    #eighth img {
+        width: 70vw;
+        height: 434vw;
+    }
+    .scrollpic {
+        width: 70vw;
+        height: 45vw;
+    }
+    #ninth {
+        width: 70vw;
+        top: 580vw;
+        left: 115px;
+    }
+    #tenth {
+        width: 70vw;
+        top: 635vw;
+        left: 115px;
+    }
+    embed {
+        width: 70vw;
+        height: 40vw;
+    }
+}

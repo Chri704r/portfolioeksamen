@@ -34,7 +34,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 45vw;
-    grid-gap: 7vw;
+    grid-gap: 5vw;
     position: absolute;
     top: 15vw;
     left: 19vw;

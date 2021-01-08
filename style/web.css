@@ -15,6 +15,7 @@ main {
     position: fixed;
     top: 20vw;
     left: -40px;
+    z-index: 1;
 }
 .navimg {
     width: 10vw;
@@ -33,7 +34,7 @@ h3 {
     color: #FDFB86;
     font-family: 'Prata', serif;
     position: absolute;
-    top: 5vw;
+    top: 6vw;
     left: 8vw;
 }
 h4 {
@@ -114,6 +115,106 @@ figcaption {
 }
 #third a:hover {
     color: #5d2f7e;
+}
+
+/*-------tablet version----*/
+
+@media only screen and (max-width: 800px) {
+    .navimg {
+        width: 110px;
+        height: 55px;
+    }
+    figcaption {
+        font-size: 2.4vw;
+    }
+    #first a,
+    #third a {
+        font-size: 2vw;
+        left: 30vw;
+        padding-top: 0.2vw;
+    }
+    #lilla_pil {
+        padding-top: 0.2vw;
+        width: 1.2vw;
+        height: 2vw;
+    }
+    #second {
+        left: 100px;
+    }
+}
+
+/*------mobil version--------*/
+
+@media only screen and (max-width: 550px) {
+    main {
+        padding-bottom: 200vw;
+    }
+    h3 {
+        font-size: 9vw;
+        top: 3vw;
+        left: 12vw;
+    }
+    h4 {
+        color: white;
+        font-size: 6vw;
+        position: absolute;
+        top: 14vw;
+        left: 22vw;
+    }
+    figcaption {
+        font-size: 4vw;
+    }
+    #first {
+        position: absolute;
+        top: 28vw;
+        left: 24vw;
+    }
+    #first a {
+        top: 47vw;
+        left: 35vw;
+        font-size: 3.7vw;
+    }
+    #lilla_pil {
+        position: absolute;
+        top: 47vw;
+        left: 64.5vw;
+        width: 2vw;
+        height: 3.4vw;
+    }
+    #sitev2 {
+        width: 70vw;
+        height: 306vw;
+    }
+    #second {
+        position: absolute;
+        top: 85vw;
+        left: 24vw;
+    }
+    #moodboard {
+        width: 70vw;
+        height: 40vw;
+        border-radius: 15px;
+    }
+    #styletile {
+        width: 70vw;
+        height: 110vw;
+    }
+    #third {
+        position: absolute;
+        top: 137vw;
+        left: 24vw;
+    }
+    #third a {
+        top: 47vw;
+        left: 35vw;
+        font-size: 3.7vw;
+    }
+    .scrollpic {
+        width: 70vw;
+        height: 40vw;
+        overflow: scroll;
+        border-radius: 15px;
+    }
 }
 
 /*-----animationer-----*/

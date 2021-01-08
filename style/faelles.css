@@ -16,15 +16,17 @@
     border-radius: 5px;
 }
 nav {
-    background-color: rgb(205, 171, 245, 50);
-    padding-right: 5vw;
-    padding-bottom: 50px;
+    background-color: rgb(205, 171, 245, 80%);
+    width: 100%;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 1;
 }
 nav a {
     color: white;
     text-decoration: none;
     font-size: 1.7vw;
-    padding-right: 3vw;
+    padding-right: 4vw;
     padding-top: 2.5vw;
     float: right;
     font-family: 'Hind Siliguri', sans-serif;
@@ -44,48 +46,6 @@ nav a:hover {
 }
 #folio_links {
     display: none;
-}
-
-/*--------mobil version style------*/
-
-@media only screen and (max-width: 800px) {
-    #menuknap {
-        display: inline-block;
-        z-index: 2;
-        position: fixed;
-    }
-    #navbar {
-        display: flex;
-        flex-direction: column-reverse;
-        position: fixed;
-        right: 0px;
-        background-color: #eae7f4;
-        z-index: 1;
-        width: 200px;
-        padding: 15px;
-        margin: -100px 0 0 -50px;
-        padding-top: 140px;
-        padding-bottom: 75vh;
-        padding-left: 60px;
-        border-left: solid #e4e2ea 2px;
-    }
-    #navbar a {
-        font-size: 20px;
-        padding-top: 35px;
-        color: #454545;
-        direction: rtl;
-    }
-    #navbar a:hover {
-        color: #8315be;
-    }
-    #folio_links {
-        display: contents;
-    }
-    #folio_links a {
-        font-size: 17px;
-        color: #696969;
-        padding-top: 15px;
-    }
 }
 
 /*----style af footer----*/
@@ -117,6 +77,114 @@ footer p {
     margin-right: auto;
     margin-left: auto;
     padding-top: 10px;
+}
+
+/*-----style af beskrivelse----*/
+
+#beskrivelse {
+    position: absolute;
+    top: 15vw;
+    left: 13.5vw;
+    z-index: 1;
+}
+#knap {
+    color: #794a9b;
+    font-weight: 600;
+    font-size: 1.8vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+#beskrivelsetekst {
+    width: 27vw;
+    padding: 1.5vw;
+    font-size: 1.6vw;
+    line-height: 25px;
+    background-color: #b485eb;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-family: 'lato';
+}
+#info_pil {
+    position: absolute;
+    top: 0vw;
+    left: 8.2vw;
+    width: 1vw;
+    height: 1.5vw;
+    transform: rotate(90deg);
+}
+
+/*--------tablet version style------*/
+
+@media only screen and (max-width: 800px) {
+    #menuknap {
+        display: inline-block;
+        z-index: 2;
+        position: fixed;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column-reverse;
+        position: fixed;
+        right: 0px;
+        background-color: #e4d6f5;
+        z-index: 1;
+        width: 200px;
+        padding: 15px;
+        margin: -100px 0 0 -50px;
+        padding-top: 140px;
+        padding-bottom: 75vh;
+        padding-left: 60px;
+        border-left: solid #e4e2ea 2px;
+    }
+    #navbar a {
+        font-size: 20px;
+        padding-top: 35px;
+        color: #454545;
+        direction: rtl;
+    }
+    #navbar a:hover {
+        color: #8315be;
+    }
+    #folio_links {
+        display: contents;
+    }
+    #folio_links a {
+        font-size: 17px;
+        color: #696969;
+        padding-top: 15px;
+    }
+    #some img {
+        width: 5vw;
+        height: 5vw;
+    }
+    #hjerte {
+        width: 5vw;
+        height: 5vw;
+    }
+    /*-----style af beskrivelse-----*/
+    #beskrivelse {
+        left: 115px;
+    }
+    #knap {
+        font-size: 18px;
+    }
+    #beskrivelsetekst {
+        width: 50vw;
+        padding: 1.5vw;
+        font-size: 17px;
+    }
+    #info_pil {
+        top: 0px;
+        left: 85px;
+        width: 10px;
+        height: 15px;
+        transform: rotate(90deg);
+    }
+}
+@media only screen and (max-width: 550px) {
+    #beskrivelse {
+        top: 22vw;
+    }
 }
 
 /*---------effekter----------*/
@@ -171,5 +239,60 @@ footer p {
     0% {
         transform-origin: 0% 0%;
         transform: translateX(0%);
+    }
+}
+.turnup {
+    animation-name: turnup_kf;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes turnup_kf {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+.turndown {
+    animation-name: turndown_kf;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes turndown_kf {
+    100% {
+        transform: rotate(90deg);
+    }
+    0% {
+        transform: rotate(270deg);
+    }
+}
+.linkmoveout {
+    animation-name: linkmoveout_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes linkmoveout_kf {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+.linkmovein {
+    animation-name: linkmovein_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes linkmovein_kf {
+    0% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }

@@ -1,10 +1,8 @@
 window.addEventListener("load", sidenVises);
 
-// vi laver en variabel som vi vil bruge som kontakt (tænd og sluk) for burgermenuen
+// vi laver variabeler til at bruge som kontakt (tænd og sluk) for burgermenuen og beskrivelsesboksen
 let menuIsOpen = false;
-
-//variabel til link
-let pilIsOut = false;
+let infoIsOut = false;
 
 
 
@@ -12,38 +10,16 @@ function sidenVises() {
     console.log("sidenVises");
 
     document.querySelector("#menuknap").addEventListener("click", toggleMenu)
-    document.querySelector("#mere").addEventListener("mouseover", link);
-    document.querySelector("#mere").addEventListener("mouseout", linkIn);
-}
+    document.querySelector("#knap").addEventListener("click", beskrivelse);
 
-function link() {
-    console.log("link");
-
-    document.querySelector("#mere").removeEventListener("mouseover", link)
-
-    document.querySelector("#pil").classList.remove("linkmovein");
-    document.querySelector("#pil").classList.add("linkmoveout");
-
-    document.querySelector("#mere").addEventListener("mouseout", linkIn);
-}
-
-function linkIn() {
-    console.log("linkIn");
-
-    document.querySelector("#mere").removeEventListener("mouseout", linkIn);
-
-    document.querySelector("#pil").classList.remove("linkmoveout");
-    document.querySelector("#pil").classList.add("linkmovein");
-
-    document.querySelector("#mere").addEventListener("mouseover", link);
 }
 
 
 
-// ------BURGER MENU---------
+// ---------------BURGER MENU----------------
 
 function toggleMenu() {
-    console.log("toggleMenu")
+    console.log("toggleMenu");
 
     document.querySelector("#menuknap").classList.toggle("change");
     document.querySelector("#navbar").classList.toggle("hidden");
@@ -67,4 +43,28 @@ function toggleMenu() {
         // Menuen er nu åben, så vi ændrer menuvariablen til at visse dette
         menuIsOpen = true;
     }
+}
+
+//-------------- BESKRIVELSESBOKS----------------
+
+function beskrivelse() {
+    console.log("beskrivelse");
+
+    document.querySelector("#beskrivelsetekst").classList.toggle("hidden");
+
+    if (infoIsOut == true) {
+        console.log("turnup");
+        document.querySelector("#info_pil").classList.remove("turnup");
+        document.querySelector("#info_pil").classList.add("turndown");
+
+        infoIsOut = false;
+
+    } else {
+        console.log("turndown");
+        document.querySelector("#info_pil").classList.remove("turndown");
+        document.querySelector("#info_pil").classList.add("turnup");
+
+        infoIsOut = true
+    }
+
 }

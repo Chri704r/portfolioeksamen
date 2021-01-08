@@ -8,7 +8,7 @@ h1 {
 h2 {
     color: white;
     position: relative;
-    top: 44vw;
+    top: 47vw;
     left: 16vw;
     font-size: 3vw;
     overflow: hidden;
@@ -47,7 +47,6 @@ h2 {
     position: absolute;
     top: 4vw;
     left: 2vw;
-    z-index: 5;
     padding-left: 1px;
     padding-bottom: 160vw;
 }
@@ -153,9 +152,6 @@ figcaption {
 /*--------------TABLET VERSION---------------*/
 
 @media only screen and (max-width: 800px) {
-    h2 {
-        top: 41vw;
-    }
     #section_om h3 {
         position: relative;
         top: -35vw;
@@ -186,7 +182,7 @@ figcaption {
         padding-left: 2px;
     }
     #section_splash {
-        padding-bottom: 150vw;
+        padding-bottom: 160vw;
     }
     #section_splash img {
         width: 90vw;
@@ -209,9 +205,10 @@ figcaption {
     }
     h2 {
         position: absolute;
-        top: 127vw;
+        top: 129vw;
         left: 55vw;
         font-size: 6vw;
+        width: 200px;
     }
     #section_om {
         padding-bottom: 100vw;
@@ -277,30 +274,33 @@ figcaption {
 
 /*----animationer-------*/
 
-.linkmoveout {
-    animation-name: linkmoveout_kf;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-@keyframes linkmoveout_kf {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(10px);
-    }
-}
-.linkmovein {
-    animation-name: linkmovein_kf;
-    animation-duration: 0.5s;
+.portslide {
+    animation-name: portslide_kf;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
-@keyframes linkmovein_kf {
+@keyframes portslide_kf {
     0% {
-        transform: translateX(10px);
+        opacity: 0;
+        transform: translateX(-110px);
     }
     100% {
+        opacity: 1;
         transform: translateX(0px);
+    }
+}
+.folioslide {
+    animation-name: folioslide_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes folioslide_kf {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) rotate(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(90deg);
     }
 }
