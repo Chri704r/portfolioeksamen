@@ -18,11 +18,13 @@ h2 {
     color: #FDFB86;
     font-family: 'Lato', sans-serif;
     font-size: 1.8vw;
+    padding-bottom: 0.5vw;
 }
 p {
     color: #4a4a4a;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
+    font-family: 'Martel Sans', sans-serif;
+    line-height: 25px;
 }
 #wave {
     width: 30vw;
@@ -54,7 +56,7 @@ p {
 }
 @media only screen and (max-width: 850px) {
     #section_om {
-        height: 130vw;
+        height: 160vw;
     }
     h1 {
         font-size: 4.5vw;
@@ -63,7 +65,8 @@ p {
         font-size: 2.2vw;
     }
     p {
-        font-size: 2vw;
+        font-size: 1.8vw;
+        line-height: 23px;
     }
     #wave {
         height: 110vw;
@@ -74,7 +77,7 @@ p {
 
 @media only screen and (max-width: 600px) {
     #section_om {
-        height: 220vw;
+        height: 290vw;
     }
     h1 {
         font-size: 10vw;
@@ -88,7 +91,7 @@ p {
     #galleri {
         flex-direction: row;
         position: absolute;
-        top: 170vw;
+        top: 220vw;
         left: 7vw;
     }
     #galleri img {

@@ -39,17 +39,19 @@ h3 {
 }
 h4 {
     color: white;
-    font-size: 3vw;
+    font-size: 4vw;
     position: absolute;
     top: 11vw;
     left: 13vw;
+    font-family: 'Sacramento', cursive;
+    font-weight: 100;
 }
 figcaption {
     text-align: center;
     color: #FFF500;
-    font-family: 'lato';
     font-size: 2vw;
     padding-bottom: 0.5vw;
+    font-family: 'Lato', sans-serif;
 }
 .scrollpic {
     width: 50vw;
@@ -68,17 +70,25 @@ figcaption {
 }
 #first a {
     position: absolute;
-    top: 34vw;
+    top: 33.8vw;
     left: 35vw;
     text-decoration: none;
     color: #794a9b;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.4vw;
+    font-family: 'Lato', sans-serif;
 }
 #first a:hover {
     color: #5d2f7e;
 }
 #lilla_pil {
+    position: absolute;
+    top: 34vw;
+    left: 46.2vw;
+    width: 0.8vw;
+    height: 1.5vw;
+}
+#lilla_pil2 {
     position: absolute;
     top: 34vw;
     left: 46.2vw;
@@ -106,12 +116,13 @@ figcaption {
 }
 #third a {
     position: absolute;
-    top: 34vw;
+    top: 33.8vw;
     left: 35vw;
     text-decoration: none;
     color: #794a9b;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.4vw;
+    font-family: 'Lato', sans-serif;
 }
 #third a:hover {
     color: #5d2f7e;
@@ -120,6 +131,16 @@ figcaption {
 /*-------tablet version----*/
 
 @media only screen and (max-width: 800px) {
+    h3 {
+        font-size: 5vw;
+        top: 3vw;
+        left: 8vw;
+    }
+    h4 {
+        font-size: 5vw;
+        top: 8vw;
+        left: 13vw;
+    }
     .navimg {
         width: 110px;
         height: 55px;
@@ -147,7 +168,7 @@ figcaption {
 
 @media only screen and (max-width: 550px) {
     main {
-        padding-bottom: 200vw;
+        padding-bottom: 220vw;
     }
     h3 {
         font-size: 9vw;
@@ -156,7 +177,7 @@ figcaption {
     }
     h4 {
         color: white;
-        font-size: 6vw;
+        font-size: 8vw;
         position: absolute;
         top: 14vw;
         left: 22vw;
@@ -166,7 +187,7 @@ figcaption {
     }
     #first {
         position: absolute;
-        top: 28vw;
+        top: 36vw;
         left: 24vw;
     }
     #first a {
@@ -176,7 +197,7 @@ figcaption {
     }
     #lilla_pil {
         position: absolute;
-        top: 47vw;
+        top: 47.5vw;
         left: 64.5vw;
         width: 2vw;
         height: 3.4vw;
@@ -187,7 +208,7 @@ figcaption {
     }
     #second {
         position: absolute;
-        top: 85vw;
+        top: 93vw;
         left: 24vw;
     }
     #moodboard {
@@ -201,7 +222,7 @@ figcaption {
     }
     #third {
         position: absolute;
-        top: 137vw;
+        top: 145vw;
         left: 24vw;
     }
     #third a {
@@ -209,40 +230,16 @@ figcaption {
         left: 35vw;
         font-size: 3.7vw;
     }
+    #lilla_pil2 {
+        top: 47.8vw;
+        left: 65vw;
+        width: 2vw;
+        height: 3.4vw;
+    }
     .scrollpic {
         width: 70vw;
         height: 40vw;
         overflow: scroll;
         border-radius: 15px;
-    }
-}
-
-/*-----animationer-----*/
-
-.linkmoveout {
-    animation-name: linkmoveout_kf;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-@keyframes linkmoveout_kf {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(10px);
-    }
-}
-.linkmovein {
-    animation-name: linkmovein_kf;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-}
-@keyframes linkmovein_kf {
-    0% {
-        transform: translateX(10px);
-    }
-    100% {
-        transform: translateX(0px);
     }
 }

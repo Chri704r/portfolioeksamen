@@ -38,17 +38,19 @@ h3 {
 }
 h4 {
     color: white;
-    font-size: 3vw;
+    font-size: 4vw;
     position: absolute;
     top: 11vw;
     left: 13vw;
+    font-family: 'Sacramento', cursive;
+    font-weight: 100;
 }
 figcaption {
     text-align: center;
     color: #FFF500;
-    font-family: 'lato';
     font-size: 2vw;
-    padding-bottom: 0.8vw;
+    padding-bottom: 0.5vw;
+    font-family: 'Lato', sans-serif;
 }
 #first {
     position: absolute;
@@ -62,49 +64,61 @@ figcaption {
 }
 #first a {
     position: absolute;
-    top: 32vw;
+    top: 31.8vw;
     left: 35vw;
     text-decoration: none;
     color: #794a9b;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.4vw;
+    font-family: 'Lato', sans-serif;
 }
 #first a:hover {
     color: #5d2f7e;
+}
+#lilla_pil {
+    position: absolute;
+    top: 32vw;
+    left: 47.5vw;
+    width: 10px;
+    height: 15px;
 }
 #second {
     position: absolute;
     top: 55vw;
     left: 10vw;
     width: 50vw;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     line-height: 25px;
     text-align: center;
+    font-family: 'Martel Sans', sans-serif;
 }
 #third {
     position: absolute;
     top: 100vw;
     left: 45vw;
     width: 50vw;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     line-height: 25px;
     text-align: center;
+    font-family: 'Martel Sans', sans-serif;
 }
 #fourth {
     position: absolute;
     top: 145vw;
     left: 12vw;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     line-height: 25px;
     width: 50vw;
+    font-family: 'Martel Sans', sans-serif;
 }
 #fifth {
     position: absolute;
     top: 175vw;
     left: 45vw;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     line-height: 25px;
     width: 50vw;
+    font-family: 'Martel Sans', sans-serif;
 }
 #sixth {
     position: absolute;
@@ -171,6 +185,9 @@ embed {
         left: 30vw;
         padding-top: 0.5vw;
     }
+    #lilla_pil {
+        top: 32.5vw;
+    }
     #second {
         top: 55vw;
         left: 15vw;
@@ -212,35 +229,28 @@ embed {
 }
 @media only screen and (max-width: 650px) {
     main {
-        padding-bottom: 700vw;
+        padding-bottom: 770vw;
     }
     h3 {
         font-size: 9vw;
         top: 3vw;
-        left: 8vw;
+        left: 12vw;
     }
     h4 {
-        font-size: 6vw;
-        top: 13vw;
-        left: 17vw;
-    }
-    #beskrivelse {
-        top: 20vw;
-    }
-    #knap {
-        font-size: 4.5vw;
-    }
-    #info_pil {
-        top: 0.2vw;
-        left: 20vw;
-        width: 2vw;
-        height: 3vw;
+        font-size: 8vw;
+        top: 14vw;
+        left: 22vw;
     }
     figcaption {
         font-size: 4vw;
+        padding-bottom: 1.5vw;
+    }
+    #beskrivelse {
+        top: 25.5vw;
+        left: 25.5vw;
     }
     #first {
-        top: 25vw;
+        top: 35vw;
         left: 115px;
     }
     #webshop {
@@ -250,39 +260,45 @@ embed {
     }
     #first a {
         top: 46vw;
-        left: 40vw;
-        font-size: 3vw;
+        left: 34vw;
+        font-size: 3.5vw;
+    }
+    #lilla_pil {
+        top: 47vw;
+        left: 65.5vw;
+        width: 10px;
+        height: 15px;
     }
     #second {
-        top: 78vw;
+        top: 90vw;
         left: 115px;
         width: 70vw;
-        font-size: 3.5vw;
+        font-size: 15px;
         line-height: 4vw;
     }
     #third {
-        top: 175vw;
+        top: 200vw;
         left: 115px;
         width: 70vw;
-        font-size: 3.5vw;
+        font-size: 15px;
         line-height: 4vw;
     }
     #fourth {
-        top: 270vw;
+        top: 315vw;
         left: 120px;
-        font-size: 3.5vw;
+        font-size: 15px;
         line-height: 4vw;
         width: 70vw;
     }
     #fifth {
-        top: 340vw;
+        top: 390vw;
         left: 120px;
-        font-size: 3.5vw;
+        font-size: 15px;
         line-height: 4vw;
         width: 70vw;
     }
     #sixth {
-        top: 420vw;
+        top: 480vw;
         left: 115px;
     }
     #sixth img {
@@ -290,7 +306,7 @@ embed {
         height: 40vw;
     }
     #seventh {
-        top: 470vw;
+        top: 530vw;
         left: 115px;
     }
     #seventh img {
@@ -298,7 +314,7 @@ embed {
         height: 40vw;
     }
     #eighth {
-        top: 520vw;
+        top: 585vw;
         left: 115px;
     }
     #eighth img {
@@ -311,12 +327,12 @@ embed {
     }
     #ninth {
         width: 70vw;
-        top: 580vw;
+        top: 645vw;
         left: 115px;
     }
     #tenth {
         width: 70vw;
-        top: 635vw;
+        top: 700vw;
         left: 115px;
     }
     embed {

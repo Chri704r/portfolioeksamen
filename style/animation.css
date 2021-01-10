@@ -38,10 +38,12 @@ h3 {
 }
 h4 {
     color: white;
-    font-size: 3vw;
+    font-size: 4vw;
     position: absolute;
     top: 11vw;
     left: 13vw;
+    font-weight: 100;
+    font-family: 'Sacramento', cursive;
 }
 figcaption {
     text-align: center;
@@ -60,30 +62,39 @@ figcaption {
     width: 50vw;
     height: 28vw;
 }
-#first img {
+#first #spilsplash {
     width: 50vw;
     height: 28vw;
     border-radius: 20px;
 }
 #first a {
     position: absolute;
-    top: 31.5vw;
+    top: 31.3vw;
     left: 35vw;
     text-decoration: none;
     color: #794a9b;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.4vw;
+    font-family: 'Lato', sans-serif;
 }
 #first a:hover {
     color: #5d2f7e;
+}
+#lilla_pil {
+    position: absolute;
+    top: 31.6vw;
+    left: 47vw;
+    width: 10px;
+    height: 15px;
 }
 #pitch {
     position: absolute;
     top: 57vw;
     left: 10vw;
     width: 50vw;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     line-height: 25px;
+    font-family: 'Martel Sans', sans-serif;
 }
 #second {
     position: absolute;
@@ -216,19 +227,6 @@ figcaption {
     #knap {
         font-size: 18px;
     }
-    #beskrivelse {
-        left: 110px;
-    }
-    #beskrivelsetekst {
-        width: 50vw;
-        padding: 1.5vw;
-        font-size: 17px;
-    }
-    #info_pil {
-        top: 0px;
-        left: 85px;
-        transform: rotate(90deg);
-    }
     figcaption {
         font-size: 2.4vw;
     }
@@ -242,6 +240,10 @@ figcaption {
         left: 115px;
         width: 50vw;
         font-size: 2vw;
+        line-height: 22px;
+    }
+    #lilla_pil {
+        top: 32vw;
     }
     #second {
         top: 90vw;
@@ -276,36 +278,32 @@ figcaption {
         left: 115px;
     }
 }
+
+/*----mobil version----*/
+
 @media only screen and (max-width: 550px) {
     main {
-        padding-bottom: 700vw;
+        padding-bottom: 720vw;
     }
     h3 {
         font-size: 9vw;
         top: 3vw;
-        left: 8vw;
+        left: 12vw;
     }
     h4 {
-        font-size: 6vw;
-        top: 13vw;
-        left: 13vw;
+        font-size: 8vw;
+        top: 14vw;
+        left: 22vw;
     }
     figcaption {
         font-size: 4vw;
     }
-    #beskrivelse {
-        top: 20vw;
-    }
-    #info_pil {
-        top: 0.2vw;
-        left: 18vw;
-    }
     #first {
-        top: 27vw;
+        top: 35vw;
         left: 25vw;
         width: 70vw;
     }
-    #first img {
+    #first #spilsplash {
         width: 70vw;
         height: 40vw;
     }
@@ -314,14 +312,20 @@ figcaption {
         left: 37vw;
         font-size: 3vw;
     }
+    #lilla_pil {
+        top: 47.4vw;
+        left: 62.5vw;
+        width: 10px;
+        height: 15px;
+    }
     #pitch {
-        top: 82vw;
+        top: 89vw;
         left: 25vw;
         width: 70vw;
         font-size: 3vw;
     }
     #second {
-        top: 135vw;
+        top: 145vw;
         left: 25vw;
     }
     #second img {
@@ -329,7 +333,7 @@ figcaption {
         height: 40vw;
     }
     #third {
-        top: 188vw;
+        top: 198vw;
         left: 25vw;
     }
     #third img {
@@ -337,7 +341,7 @@ figcaption {
         height: 40vw;
     }
     #fourth {
-        top: 234vw;
+        top: 242vw;
         left: 25vw;
     }
     #fourth img {
@@ -345,7 +349,7 @@ figcaption {
         height: 40vw;
     }
     #fifth {
-        top: 280vw;
+        top: 288vw;
         left: 25vw;
     }
     #fifth img {
@@ -353,7 +357,7 @@ figcaption {
         height: 40vw;
     }
     #sixth {
-        top: 327vw;
+        top: 334vw;
         left: 25vw;
     }
     #sixth img {
@@ -361,7 +365,7 @@ figcaption {
         height: 40vw;
     }
     #seventh {
-        top: 370vw;
+        top: 380vw;
         left: 25vw;
     }
     #seventh img {
@@ -369,7 +373,7 @@ figcaption {
         height: 40vw;
     }
     #eighth {
-        top: 420vw;
+        top: 430vw;
         left: 25vw;
     }
     #eighth img {
@@ -378,7 +382,7 @@ figcaption {
         border-radius: 20px;
     }
     #ninth {
-        top: 470vw;
+        top: 480vw;
         left: 25vw;
     }
     #ninth img {
@@ -386,7 +390,7 @@ figcaption {
         height: 40vw;
     }
     #tenth {
-        top: 520vw;
+        top: 530vw;
         left: 25vw;
     }
     #tenth img {
@@ -394,7 +398,7 @@ figcaption {
         height: 40vw;
     }
     #eleventh {
-        top: 565vw;
+        top: 575vw;
         left: 25vw;
     }
     #eleventh img {
@@ -402,7 +406,7 @@ figcaption {
         height: 40vw;
     }
     #twelfth {
-        top: 610vw;
+        top: 620vw;
         left: 25vw;
     }
     #twelfth img {
@@ -410,7 +414,7 @@ figcaption {
         height: 40vw;
     }
     #thirdteenth {
-        top: 655vw;
+        top: 665vw;
         left: 26vw;
     }
     #thirdteenth img {

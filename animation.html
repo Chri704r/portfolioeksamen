@@ -3,9 +3,22 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----------favicon ---------->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon1.png">
+
+    <!--------fonte---------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Hind+Siliguri:wght@400;500&family=Lato:wght@300;400&family=Martel+Sans:wght@400;600&family=Martel:wght@400;600&family=Prata&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-------stylesheets-------->
     <link rel="stylesheet" href="style/faelles.css">
     <link rel="stylesheet" href="style/animation.css">
+
     <title>Animation portfolio</title>
 </head>
 
@@ -67,13 +80,14 @@
 
         <div id="first">
             <figcaption>Individuelt spil - Banana splat</figcaption>
-            <img src="img/startskaerm_animation.png" alt="splashbillede til spil">
-            <a href="https://piilmanndesigns.dk/kea/04_animation/spil/index.html">Begynd at spille nu</a>
+            <img id="spilsplash" src="img/startskaerm_animation.png" alt="splashbillede til spil">
+            <a id="mere" href="https://piilmanndesigns.dk/kea/04_animation/spil/index.html">Begynd at spille nu</a>
+            <img id="lilla_pil" src="img/lilla_pil.png" alt="lilla pil">
         </div>
 
         <div id="pitch">
-            <figcaption>Pitch</figcaption>
-            <p>I mit spil skal du hjælpe aben med at få gule bananer. Bananerne falder ned fra et træ, men hvis de rammer jorden så smatter de ud, aben bliver ked af det og du mister et liv. Man skal dog passe på fordi der falder også brune og umodne bananer ned, og dem vil aben ikke have, så dem skal man ikke fange. Hvis man fanger dem, mister man også et liv. Man skal fange 10 gule bananer inden tiden løber ud for at vinde. Man har 3 liv i alt. </p>
+            <figcaption>Pitch/vejledning</figcaption>
+            <p>I mit spil skal du hjælpe aben med at få gule bananer. Bananerne falder ned fra et træ, men hvis de rammer jorden så smatter de ud, aben bliver ked af det og du mister et liv. Du skal dog passe på fordi der falder også brune og umodne bananer ned, og dem vil aben ikke have, så dem skal du ikke fange. Hvis du fanger dem, mister du også et liv. Du skal fange 10 gule bananer inden tiden løber ud for at vinde og du har 3 liv i alt. God fornøjelse!</p>
 
         </div>
 
@@ -158,6 +172,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="animation.js"></script>
 </body>
 
 </html>

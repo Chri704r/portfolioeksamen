@@ -38,10 +38,12 @@ h3 {
 }
 h4 {
     color: white;
-    font-size: 3vw;
+    font-size: 4vw;
     position: absolute;
     top: 11vw;
     left: 13vw;
+    font-weight: 100;
+    font-family: 'Sacramento', cursive;
 }
 figcaption {
     text-align: center;
@@ -71,12 +73,13 @@ figcaption {
 }
 #second a {
     position: absolute;
-    top: 32vw;
+    top: 31.8vw;
     left: 32vw;
     text-decoration: none;
     color: #794a9b;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.4vw;
+    font-family: 'Lato', sans-serif;
 }
 #second a:hover {
     color: #5d2f7e;
@@ -85,6 +88,13 @@ figcaption {
     position: absolute;
     top: 32vw;
     left: 44vw;
+    width: 0.8vw;
+    height: 1.5vw;
+}
+#lilla_pil2 {
+    position: absolute;
+    top: 32vw;
+    left: 45.5vw;
     width: 0.8vw;
     height: 1.5vw;
 }
@@ -101,13 +111,15 @@ figcaption {
 h6 {
     padding-top: 0.5vw;
     color: white;
-    font-size: 1.8vw;
-    font-weight: 100;
+    font-size: 1.6vw;
+    font-weight: 400;
+    font-family: 'Martel Sans', sans-serif;
 }
 #third p {
     width: 50vw;
-    font-size: 1.7vw;
-    line-height: 25px;
+    font-size: 1.5vw;
+    line-height: 23px;
+    font-family: 'Martel Sans', sans-serif;
 }
 #fourth {
     position: absolute;
@@ -124,12 +136,13 @@ h6 {
 }
 #fourth a {
     position: absolute;
-    top: 32vw;
-    left: 24vw;
+    top: 31.8vw;
+    left: 23vw;
     text-decoration: none;
     color: #794a9b;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.4vw;
+    font-family: 'Lato', sans-serif;
 }
 #fourth a:hover {
     color: #5d2f7e;
@@ -142,27 +155,11 @@ h6 {
 
 @media only screen and (max-width: 800px) {
     main {
-        padding-bottom: 230vw;
+        padding-bottom: 250vw;
     }
     .navimg {
         width: 110px;
         height: 55px;
-    }
-    #knap {
-        font-size: 18px;
-    }
-    #beskrivelse {
-        left: 115px;
-    }
-    #beskrivelsetekst {
-        width: 50vw;
-        padding: 1.5vw;
-        font-size: 17px;
-    }
-    #info_pil {
-        top: 0px;
-        left: 85px;
-        transform: rotate(90deg);
     }
     figcaption {
         font-size: 2.4vw;
@@ -183,7 +180,7 @@ h6 {
     }
     #fourth {
         position: absolute;
-        top: 190vw;
+        top: 200vw;
         left: 115px;
     }
     h6 {
@@ -192,33 +189,50 @@ h6 {
     #third p {
         font-size: 2.3vw;
     }
+    #lilla_pil2 {
+        position: absolute;
+        top: 32.5vw;
+        left: 46vw;
+        width: 1vw;
+        height: 1.8vw;
+    }
+    #lilla_pil {
+        position: absolute;
+        top: 32.5vw;
+        left: 44vw;
+        width: 1vw;
+        height: 1.8vw;
+    }
 }
+
+/*----mobil version----*/
+
 @media only screen and (max-width: 600px) {
     main {
-        padding-bottom: 330vw;
+        padding-bottom: 350vw;
     }
     h3 {
         font-size: 9vw;
         top: 3vw;
-        left: 8vw;
+        left: 12vw;
     }
     h4 {
-        font-size: 6vw;
-        top: 13vw;
-        left: 15vw;
+        font-size: 8vw;
+        top: 14vw;
+        left: 22vw;
     }
     figcaption {
         font-size: 4vw;
     }
     #first {
-        top: 30vw;
+        top: 35vw;
         left: 25vw;
     }
     #first video {
         width: 70vw;
     }
     #second {
-        top: 80vw;
+        top: 85vw;
         left: 25vw;
     }
     #second #redesign {
@@ -227,16 +241,12 @@ h6 {
         border-radius: 20px;
     }
     #second a {
-        position: absolute;
-        top: 32vw;
-        left: 32vw;
-        text-decoration: none;
-        color: #794a9b;
-        font-weight: 600;
-        font-size: 1.4vw;
+        top: 46.5vw;
+        left: 37vw;
+        font-size: 3vw;
     }
     #third {
-        top: 130vw;
+        top: 140vw;
         left: 25vw;
     }
     #third img {
@@ -251,7 +261,7 @@ h6 {
         font-size: 3vw;
     }
     #fourth {
-        top: 255vw;
+        top: 275vw;
         left: 25vw;
     }
     #fourth #dokumentation {
@@ -263,17 +273,19 @@ h6 {
     }
     #fourth a {
         top: 48vw;
-        left: 13vw;
-        font-size: 3.5vw;
+        left: 16vw;
+        font-size: 3vw;
     }
-    #knap {
-        font-size: 4.5vw;
+    #lilla_pil {
+        top: 47vw;
+        left: 62vw;
+        width: 1.7vw;
+        height: 2.5vw;
     }
-    #beskrivelse {
-        top: 20vw;
-    }
-    #info_pil {
-        top: 0.5vw;
-        left: 20vw;
+    #lilla_pil2 {
+        top: 48.7vw;
+        left: 64vw;
+        width: 1.7vw;
+        height: 2.5vw;
     }
 }
