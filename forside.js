@@ -5,8 +5,6 @@ function sidenVises() {
 
     document.querySelector("#mere").addEventListener("mouseover", link);
     document.querySelector("#mere").addEventListener("mouseout", linkIn);
-    document.querySelector("#om_mig").addEventListener("scroll", slide)
-
 }
 
 function link() {
@@ -29,10 +27,4 @@ function linkIn() {
     document.querySelector("#pil").classList.add("linkmovein");
 
     document.querySelector("#mere").addEventListener("mouseover", link);
-}
-
-function slide() {
-    console.log("slide");
-
-    document.querySelector("#om_mig").classList.add("slidein");
 }

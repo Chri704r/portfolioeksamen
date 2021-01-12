@@ -11,7 +11,6 @@ function sidenVises() {
 
     document.querySelector("#menuknap").addEventListener("click", toggleMenu)
     document.querySelector("#knap").addEventListener("click", beskrivelse);
-
 }
 
 

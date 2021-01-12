@@ -183,13 +183,16 @@ footer p {
         transform: rotate(90deg);
     }
 }
+
+/*-------mobil version style----*/
+
 @media only screen and (max-width: 550px) {
     #beskrivelse {
         top: 25.5vw;
     }
 }
 
-/*---------effekter----------*/
+/*---------Effekter----------*/
 
 .hidden {
     display: none;
@@ -209,7 +212,7 @@ footer p {
     background-color: #454545;
 }
 
-/*------animationer---------*/
+/*-----------Animationer---------*/
 
 .openmenu {
     animation-name: slide_kf;

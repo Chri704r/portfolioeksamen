@@ -46,7 +46,7 @@ h4 {
     font-family: 'Sacramento', cursive;
     font-weight: 100;
 }
-figcaption {
+.figcaption {
     text-align: center;
     color: #FFF500;
     font-size: 2vw;
@@ -145,7 +145,7 @@ figcaption {
         width: 110px;
         height: 55px;
     }
-    figcaption {
+    .figcaption {
         font-size: 2.4vw;
     }
     #first a,
@@ -182,7 +182,7 @@ figcaption {
         top: 14vw;
         left: 22vw;
     }
-    figcaption {
+    .figcaption {
         font-size: 4vw;
     }
     #first {
@@ -241,5 +241,23 @@ figcaption {
         height: 40vw;
         overflow: scroll;
         border-radius: 15px;
+    }
+}
+
+/*-------animationer-----*/
+
+.fade {
+    animation-name: fade_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes fade_kf {
+    0% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }

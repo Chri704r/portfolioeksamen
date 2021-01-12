@@ -42,13 +42,12 @@ h2 {
 }
 #streg {
     width: 0.2vw;
-    height 40vw;
     background-color: #FFFF00;
     position: absolute;
     top: 4vw;
     left: 2vw;
     padding-left: 1px;
-    padding-bottom: 160vw;
+    padding-bottom: 153vw;
 }
 
 /*--------STYLE AF SECTION_OM-----------*/
@@ -137,8 +136,12 @@ h3 {
     height: 29vw;
     border-radius: 10px;
 }
-#section_portfolio img:hover {
-    transform: scale(105%);
+.portfolio_image {
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+.portfolio_image:hover {
+    transform: scale(1.03);
 }
 figcaption {
     display: block;
@@ -160,7 +163,7 @@ figcaption {
         position: relative;
         top: -35vw;
         width: 50vw;
-        font-size: 2.3vw;
+        font-size: 1.7vw;
     }
     #section_om a {
         position: relative;
@@ -224,7 +227,7 @@ figcaption {
         position: relative;
         top: -6vw;
         left: 5vw;
-        font-size: 4vw;
+        font-size: 3vw;
         width: 85vw;
     }
     #section_om a {
@@ -262,10 +265,6 @@ figcaption {
         justify-content: flex-start;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
-    }
-    #section_portfolio .col_top {
-        flex-shrink: 0;
-        scroll-snap-align: center;
     }
     figcaption {
         font-size: 5vw;

@@ -45,7 +45,7 @@ h4 {
     font-weight: 100;
     font-family: 'Sacramento', cursive;
 }
-figcaption {
+.figcaption {
     text-align: center;
     color: #FFF500;
     font-family: 'lato';
@@ -115,7 +115,7 @@ h6 {
     font-weight: 400;
     font-family: 'Martel Sans', sans-serif;
 }
-#third p {
+#third .brodtekst {
     width: 50vw;
     font-size: 1.5vw;
     line-height: 23px;
@@ -130,9 +130,6 @@ h6 {
     width: 50vw;
     height: 28vw;
     border-radius: 20px;
-}
-#fourth figcaption {
-    width: 50vw;
 }
 #fourth a {
     position: absolute;
@@ -161,7 +158,7 @@ h6 {
         width: 110px;
         height: 55px;
     }
-    figcaption {
+    .figcaption {
         font-size: 2.4vw;
     }
     #second a {
@@ -186,7 +183,7 @@ h6 {
     h6 {
         font-size: 2.4vw;
     }
-    #third p {
+    #third .brodtekst {
         font-size: 2.3vw;
     }
     #lilla_pil2 {
@@ -221,8 +218,11 @@ h6 {
         top: 14vw;
         left: 22vw;
     }
-    figcaption {
+    .figcaption {
         font-size: 4vw;
+    }
+    #beskrivelse {
+        top: 25.5vw;
     }
     #first {
         top: 35vw;
@@ -256,7 +256,7 @@ h6 {
     h6 {
         font-size: 3.5vw;
     }
-    #third p {
+    #third .brodtekst {
         width: 70vw;
         font-size: 3vw;
     }
@@ -267,9 +267,6 @@ h6 {
     #fourth #dokumentation {
         width: 70vw;
         height: 40vw;
-    }
-    #fourth figcaption {
-        width: 50vw;
     }
     #fourth a {
         top: 48vw;

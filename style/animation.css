@@ -45,7 +45,7 @@ h4 {
     font-weight: 100;
     font-family: 'Sacramento', cursive;
 }
-figcaption {
+.figcaption {
     text-align: center;
     color: #FFF500;
     font-family: 'lato';
@@ -103,7 +103,7 @@ figcaption {
 }
 #second img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #third {
@@ -113,7 +113,7 @@ figcaption {
 }
 #third img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #fourth {
@@ -123,7 +123,7 @@ figcaption {
 }
 #fourth img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #fifth {
@@ -133,7 +133,7 @@ figcaption {
 }
 #fifth img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #sixth {
@@ -143,7 +143,7 @@ figcaption {
 }
 #sixth img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #seventh {
@@ -153,7 +153,7 @@ figcaption {
 }
 #seventh img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #eighth {
@@ -163,7 +163,7 @@ figcaption {
 }
 #eighth img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #ninth {
@@ -173,7 +173,7 @@ figcaption {
 }
 #ninth img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #tenth {
@@ -183,7 +183,7 @@ figcaption {
 }
 #tenth img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #eleventh {
@@ -193,7 +193,7 @@ figcaption {
 }
 #eleventh img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #twelfth {
@@ -203,7 +203,7 @@ figcaption {
 }
 #twelfth img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 #thirdteenth {
@@ -213,7 +213,7 @@ figcaption {
 }
 #thirdteenth img {
     width: 50vw;
-    height: 28;
+    height: 28vw;
     border-radius: 20px;
 }
 
@@ -227,7 +227,7 @@ figcaption {
     #knap {
         font-size: 18px;
     }
-    figcaption {
+    .figcaption {
         font-size: 2.4vw;
     }
     #first a {
@@ -295,7 +295,7 @@ figcaption {
         top: 14vw;
         left: 22vw;
     }
-    figcaption {
+    .figcaption {
         font-size: 4vw;
     }
     #first {

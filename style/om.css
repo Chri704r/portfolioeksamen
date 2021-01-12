@@ -32,6 +32,9 @@ p {
     position: absolute;
     top: 8vw;
 }
+#wave2 {
+    display: none;
+}
 #info {
     display: flex;
     flex-direction: column;
@@ -50,9 +53,12 @@ p {
     flex-direction: column;
     position: absolute;
     grid-gap: 2vw;
-    width: 20vw;
     top: 12vw;
     left: 77vw;
+}
+#galleri img {
+    width: 20vw;
+    height: 30vw;
 }
 @media only screen and (max-width: 850px) {
     #section_om {
@@ -84,9 +90,13 @@ p {
         left: 20vw;
     }
     #wave {
-        width: 17vw;
-        height: 150vw;
-        left: 2vw;
+        display: none;
+    }
+    #wave2 {
+        display: inline;
+        position: absolute;
+        top: 15vw;
+        left: 1vw;
     }
     #galleri {
         flex-direction: row;
@@ -96,6 +106,7 @@ p {
     }
     #galleri img {
         width: 27vw;
+        height: 41vw;
     }
     #info {
         position: absolute;
@@ -110,5 +121,23 @@ p {
     #uddannelse {
         padding-left: 0vw;
         width: 70vw;
+    }
+}
+
+/*------animationer-----*/
+
+.fade {
+    animation-name: fade_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes fade_kf {
+    0% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
